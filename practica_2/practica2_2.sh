@@ -4,7 +4,10 @@
 for nombre in "$@"
 do
 	if test -e $nombre
-	then more $nombre
-	else echo "$nombre no es un fichero" 
+	then 
+		more $nombre 
+		echo -e "\n"
+	else 
+		echo -e "$nombre no es un fichero \n"
 	fi
 done

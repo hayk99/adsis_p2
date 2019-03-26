@@ -1,10 +1,6 @@
 #!/bin/bash
 # Autores:  Hayk Kocharyan (757715) & Jose Felix Yagüe Royo (755416)
 # Last update: 20/3/19
-
-
-
-
 dir=$(ls -l ~ | egrep -c -E '^d.*bin[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]$')
 files=$(ls -l | egrep -c '^-.*x')
 
@@ -21,6 +17,7 @@ else
 	usr=$(whoami)
 	barra="/"
 	dtemp="$home$usr$barra$bin"
+	#dtemp=~/$bin
 	echo $dtemp
 fi 
 echo el directorio es $dtemp 
